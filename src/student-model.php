@@ -39,7 +39,7 @@ class Student
         $sql = "SELECT * FROM student WHERE id=$id";
         $result = $this->connection->query($sql);
         if ($result->num_rows > 0) {
-            return $result->fetch_assoc();
+            return $result->fetch_assoc();          
         }
         return null;
     }
