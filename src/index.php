@@ -5,32 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Home</title>
-    <style>
-        body {
-            margin: 0px;
-        }
-
-        header {
-            background-color: lightblue;
-            padding: 30px;
-        }
-
-        footer {
-            background-color: lightblue;
-            padding: 10px;
-            text-align: center;
-        }
-
-        div.gray {
-            background-color: lightgray;
-            padding: 20px;
-        }
-
-        div {
-            padding: 20px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="site.css">
 </head>
 
 <body>
@@ -38,13 +13,7 @@
         <h1>Little Angels School</h1>
     </header>
     <div>
-        <nav>
-            <a href="">Infrastructure</a> |
-            <a href="">Academics</a> |
-            <a href="">Student Corner</a> |
-            <a href="contact-us.php">Contact Us</a> |
-            <a href="admin.php">Admin</a>
-        </nav>
+        <?php require('nav.php'); ?>
     </div>
     <div>
         <h2>About Us</h2>

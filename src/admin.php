@@ -9,7 +9,8 @@
 <body>
     <div class="grid-container">
         <aside>
-            <a href="student.php">Student</a>
+            <a href="student/student.php">Student</a>
+            <a href="staff/staff.php">staff</a>
         </aside>
         <main></main>
     </div>

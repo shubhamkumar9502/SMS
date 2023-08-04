@@ -1,12 +1,12 @@
 <?php
 
-use school\student\Student;
+use school\staff\staff;
 
-require 'student-model.php';
+require 'staff-model.php';
 
 if (isset($_POST['submit'])) {
-    $student = new Student();
-    $student->create($_POST);
+    $staff = new staff();
+    $staff->create($_POST);
 }
 ?>
 
@@ -16,19 +16,19 @@ if (isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Student</title>
-    <link rel="stylesheet" href="site.css">
+    <title>New Staff</title>
+    <link rel="stylesheet" href="../site.css">
 </head>
 
 <body>
     <div class="grid-container">
         <aside>
-            <a href="index.php">Home</a>
-            <a href="admin.php">Admin Home</a>
+            <a href="../index.php">Home</a>
+            <a href="../admin.php">Admin Home</a>
             <a href="student.php">Student</a>
         </aside>
         <main>
-            <h1>New Student</h1>
+            <h1>New Staff</h1>
             <form action="" method="post">
                 <label for="">First Name</label>
                 <input type="text" name="first_name" id="first_name">

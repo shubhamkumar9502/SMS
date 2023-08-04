@@ -1,0 +1,1 @@
+ALTER TABLE student ADD COLUMN contact_no CHAR(10);

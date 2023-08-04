@@ -5,45 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {
-            margin: 0px;
-        }
-        header {
-            background-color: lightblue;
-            padding: 30px;
-        }
-
-        footer {
-            background-color: lightblue;
-            padding: 10px;
-            text-align: center;
-        }
-
-        div.gray {
-            background-color: lightgray;
-            padding: 20px;
-        }
-
-        div {
-            padding: 20px;
-        }
-        label {
-            display: block;
-            padding: 10px;
-        }
-        input {
-            display: block;
-            margin-bottom: 10px;
-            padding: 10px;
-            width: 90%;
-        }
-
-        button {
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="site.css">
 </head>
 
 <body>
@@ -51,12 +13,7 @@
         <h1>Little Angels School</h1>
     </header>
     <div>
-        <nav>
-            <a href="">Infrastructure</a> |
-            <a href="">Academics</a> |
-            <a href="">Student Corner</a> |
-            <a href="contact-us.php">Contact Us</a>
-        </nav>
+        <?php require('nav.php') ?>
     </div>
     <h1>Contact Us</h1>
     <form action="" method="post">

@@ -36,6 +36,30 @@ label {
     padding: 10px;
 }
 
+body {
+    margin: 0px;
+}
+
+header {
+    background-color: lightblue;
+    padding: 30px;
+}
+
+footer {
+    background-color: lightblue;
+    padding: 10px;
+    text-align: center;
+}
+
+div.gray {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+div {
+    padding: 20px;
+}
+
 input {
     display: block;
     padding: 10px;

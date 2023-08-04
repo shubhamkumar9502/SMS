@@ -2,7 +2,7 @@
 
 namespace school\student;
 
-require 'env.php';
+require '../env.php';
 
 class Student
 {
