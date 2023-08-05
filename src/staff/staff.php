@@ -47,8 +47,8 @@ $staffs = $staff->index();
                             <td><?= $staff['middle_name'] ?></td>
                             <td><?= $staff['last_name'] ?></td>
                             <td><?= $staff['contact_no'] ?></td>
-                            <td><a href="<?php echo 'edit-student.php?id=' . $staff['id'] ?>">Edit</a></td>
-                            <td><a href="<?php echo 'delete-student.php?id=' . $staff['id'] ?>">Delete</a></td>
+                            <td><a href="<?php echo 'edit-staff.php?id=' . $staff['id'] ?>">Edit</a></td>
+                            <td><a href="<?php echo 'delete-staff.php?id=' . $staff['id'] ?>">Delete</a></td>
                         </tr>
                     <?php
                     }

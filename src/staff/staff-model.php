@@ -46,6 +46,27 @@ class staff
        }
        return null;
    }
+
+
+   public function delete(int $id)
+   {
+       $sql = "DELETE FROM staff WHERE id=$id";
+       $this->connection->query($sql);
+       header("location:staff.php");
+   }
+
+   public function edit($staff)
+    {
+        $id = $staff['id'];
+        $first_name = $staff['first_name'];
+        $middle_name = $staff['middle_name'];
+        $last_name = $staff['last_name'];
+        $contact_no = $staff['contact_no'];
+        $sql = "UPDATE staff SET first_name='$first_name', middle_name='$middle_name', last_name='$last_name', contact_no='$contact_no' WHERE id=$id";
+        $this->connection->query($sql);
+        header("location:staff.php");
+    }
+
    
     public function ___descturct()
     {
