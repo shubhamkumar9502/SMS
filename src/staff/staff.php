@@ -20,7 +20,7 @@ $staffs = $staff->index();
 <body>
     <div class="grid-container">
         <aside>
-            <a href="">staff</a>
+            <?php require('../sidebar.php') ?>
         </aside>
         <main>
             <h1>List of Staffs</h1>

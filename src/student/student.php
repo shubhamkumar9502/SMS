@@ -20,7 +20,7 @@ $students = $student->index();
 <body>
     <div class="grid-container">
         <aside>
-            <a href="">Student</a>
+            <?php require('../sidebar.php')?>
         </aside>
         <main>
             <h1>List of Students</h1>

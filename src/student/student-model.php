@@ -2,7 +2,7 @@
 
 namespace school\student;
 
-require '../env.php';
+require dirname(__FILE__, 2) . '\env.php' ;
 
 class Student
 {
@@ -61,6 +61,15 @@ class Student
         $sql = "DELETE FROM student WHERE id=$id";
         $this->connection->query($sql);
         header("location:student.php");
+    }
+
+    public function count_of_students()
+    {
+        $sql = "SELECT COUNT(id) FROM student";
+        $result = $this->connection->query($sql);
+        if($result->num_rows > 0)
+            return $result->fetch_array();
+        return null;
     }
 
     public function ___descturct()

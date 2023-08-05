@@ -1,7 +1,8 @@
 body {
     margin: 0px;
-    
+
 }
+
 div.grid-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -26,7 +27,8 @@ table {
     border: 1px black solid;
 }
 
-td, th {
+td,
+th {
     border: 1px solid black;
     padding: 10px;
 }
@@ -70,4 +72,24 @@ input {
 button {
     display: block;
     padding: 10px;
+}
+
+.admin-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.card {
+    width: 200px;
+    height: 150px;
+    border-radius: 50px;
+}
+
+.card-title {
+    text-align: right;
+}
+
+.card-body {
+    text-align: center;
 }

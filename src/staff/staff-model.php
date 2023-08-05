@@ -1,7 +1,7 @@
 <?php
 
 namespace school\staff;
-require '../env.php' ;
+require dirname(__FILE__, 2) . '\env.php' ;
 
 class staff
 
@@ -67,6 +67,14 @@ class staff
         header("location:staff.php");
     }
 
+    public function count_of_staffs()
+    {
+        $sql = "SELECT COUNT(id) FROM staff";
+        $result = $this->connection->query($sql);
+        if($result->num_rows > 0)
+            return $result->fetch_array();
+        return null;
+    }
    
     public function ___descturct()
     {
